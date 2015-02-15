@@ -1,0 +1,91 @@
+\DeclareTextCommandDefault{\nobreakspace}{\leavevmode\nobreak\ } 
+
+%\documentclass{article}
+\documentclass[letterpaper,pagesize,12pt]{article}
+\usepackage[french]{babel}
+\usepackage[pass,letterpaper]{geometry}
+
+\usepackage{amssymb}
+\usepackage{xunicode}
+\usepackage{fontspec}
+\usepackage{xltxtra}
+\usepackage{libertineotf}
+
+\usepackage[bookmarks, colorlinks, breaklinks]{hyperref}
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=darkgray} 
+
+\usepackage{pstricks}
+\usepackage{auto-pst-pdf,pst-barcode}
+
+\setlength{\oddsidemargin}{0.5cm}
+\setlength{\evensidemargin}{0.5cm}
+\setlength{\topmargin}{-0.5cm}
+\setlength{\headheight}{0cm}
+\setlength{\headsep}{0cm}
+\setlength{\textheight}{23.5cm}
+\setlength{\textwidth}{15.5cm}
+\setlength{\footskip}{.8cm}
+\parindent 0pt
+\parskip 5pt
+
+\begin{document}
+\nocite{*}
+\input frMacros
+\input ../CV
+
+\end{document}
+\endinput
+
+
+%\newpage
+%\input ../references
+%\newpage
+%\input ../teaching
+%\newpage
+%\input enResearch
+%\newpage
+%\input enOutcomes
+%\newpage
+%\input ../grants
+%\newpage
+%\input ../external
+\newpage
+\section*{\titlePublications}
+
+\renewcommand\refname{\pubBooks}
+\renewcommand\refprefix{a}
+\input ../publications/books/publist.bbl
+
+%\renewcommand\refname{\pubEditors}
+%\renewcommand\refprefix{a}
+%\input ../publications/editors/publist.bbl
+%
+%\renewcommand\refname{\pubTranslators}
+%\renewcommand\refprefix{b}
+%\input ../publications/translators/publist.bbl
+%
+
+\renewcommand\refname{\pubJournals}
+\renewcommand\refprefix{b}
+\input ../publications/journals/publist.bbl
+
+\renewcommand\refname{\pubConferences}
+\renewcommand\refprefix{c}
+\input ../publications/conferences/publist.bbl
+
+\renewcommand\refname{\pubChapters}
+\renewcommand\refprefix{d}
+\input ../publications/chapters/publist.bbl
+
+\renewcommand\refname{\pubTheses}
+\renewcommand\refprefix{e}
+\input ../publications/mytheses/publist.bbl
+
+\renewcommand\refname{\pubCompilations}
+\renewcommand\refprefix{f}
+\input ../publications/compilations/publist.bbl
+%
+%\renewcommand\refname{\pubSupervised}
+%\renewcommand\refprefix{g}
+%\input ../publications/theses/publist.bbl
+\end{document}

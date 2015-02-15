@@ -2,7 +2,7 @@ RM        = rm -f
 CLEANTEX  = $(RM) *.aux *.bbl *.blg *.dvi *.lof *.log *.lot *.toc *.out
 
 #SUBLANGS  = en fr es
-SUBLANGS  = en
+SUBLANGS  = en fr
 
 all : 
 	for i in $(SUBLANGS) ; do \
