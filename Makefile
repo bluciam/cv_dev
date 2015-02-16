@@ -10,4 +10,4 @@ all :
 
 .PHONY : clean
 clean : 
-	for i in $(SUBLANGS) ; do (cd $$i ; rm *All.pdf  $(CLEANTEX)); done 
+	for i in $(SUBLANGS) ; do (cd $$i ; rm $(CLEANTEX)); done 

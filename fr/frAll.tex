@@ -2,7 +2,7 @@
 
 %\documentclass{article}
 \documentclass[letterpaper,pagesize,12pt]{article}
-\usepackage[french]{babel}
+%\usepackage[french]{babel}
 \usepackage[pass,letterpaper]{geometry}
 
 \usepackage{amssymb}
@@ -28,6 +28,15 @@
 \parindent 0pt
 \parskip 5pt
 
+\usepackage{fancyhdr,extramarks}
+\pagestyle{fancy}
+%\rhead{\bf Blanca MANCILLA}
+%\rfoot{p.\thepage}
+\rhead{\bf Blanca MANCILLA, page \thepage}
+\renewcommand\headrulewidth{0pt}
+\cfoot{ }
+
+
 \begin{document}
 \nocite{*}
 \input frMacros
@@ -36,56 +45,3 @@
 \end{document}
 \endinput
 
-
-%\newpage
-%\input ../references
-%\newpage
-%\input ../teaching
-%\newpage
-%\input enResearch
-%\newpage
-%\input enOutcomes
-%\newpage
-%\input ../grants
-%\newpage
-%\input ../external
-\newpage
-\section*{\titlePublications}
-
-\renewcommand\refname{\pubBooks}
-\renewcommand\refprefix{a}
-\input ../publications/books/publist.bbl
-
-%\renewcommand\refname{\pubEditors}
-%\renewcommand\refprefix{a}
-%\input ../publications/editors/publist.bbl
-%
-%\renewcommand\refname{\pubTranslators}
-%\renewcommand\refprefix{b}
-%\input ../publications/translators/publist.bbl
-%
-
-\renewcommand\refname{\pubJournals}
-\renewcommand\refprefix{b}
-\input ../publications/journals/publist.bbl
-
-\renewcommand\refname{\pubConferences}
-\renewcommand\refprefix{c}
-\input ../publications/conferences/publist.bbl
-
-\renewcommand\refname{\pubChapters}
-\renewcommand\refprefix{d}
-\input ../publications/chapters/publist.bbl
-
-\renewcommand\refname{\pubTheses}
-\renewcommand\refprefix{e}
-\input ../publications/mytheses/publist.bbl
-
-\renewcommand\refname{\pubCompilations}
-\renewcommand\refprefix{f}
-\input ../publications/compilations/publist.bbl
-%
-%\renewcommand\refname{\pubSupervised}
-%\renewcommand\refprefix{g}
-%\input ../publications/theses/publist.bbl
-\end{document}
