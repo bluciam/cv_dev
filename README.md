@@ -8,6 +8,6 @@ There is a `Makefile` for the actual compilation and creation of the `pdf`
 file. To create just run `make` and to clean the repository from created
 files run `make clean`. The result can be found in `en/enAll.pdf`.
 
-Il y a aussi une traduction français, et le résultat se trouve en
-`fr/frAll.pdf`.
+Il y a aussi une traduction française, et le résultat se trouve en
+`fr/frAll.pdf`. Cette version a besoin d'être mise à jour.
 
